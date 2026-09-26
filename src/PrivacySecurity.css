@@ -1,0 +1,1137 @@
+/* =========================================================
+   MAXIGO RIDER
+   PRIVACY & SECURITY - COMPLETE REPLACEMENT
+   ========================================================= */
+
+.privacy-security-page {
+  display: block !important;
+  position: relative;
+  width: 100%;
+  max-width: 1050px;
+  min-height: 100%;
+  margin: 0 auto;
+  padding: 28px 24px 115px;
+  box-sizing: border-box;
+  color: #18213a;
+  background: transparent;
+  font-family: inherit;
+  overflow: visible;
+}
+
+.privacy-security-page *,
+.privacy-security-page *::before,
+.privacy-security-page *::after {
+  box-sizing: border-box;
+}
+
+/* =========================
+   HEADER
+   ========================= */
+
+.privacy-header {
+  display: flex !important;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin: 0 0 24px;
+}
+
+.privacy-back-btn {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border: 1px solid #e5e0f1;
+  border-radius: 14px;
+  background: #ffffff;
+  color: #18213a;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+  cursor: pointer;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 18px rgba(90, 55, 180, 0.06);
+  transition: 0.2s ease;
+}
+
+.privacy-back-btn:hover {
+  background: #f7f5ff;
+  transform: translateX(-2px);
+}
+
+.privacy-header-text {
+  flex: 1;
+  min-width: 0;
+}
+
+.privacy-label {
+  display: block;
+  margin: 0 0 5px;
+  color: #68758c;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.8px;
+}
+
+.privacy-header h1 {
+  display: block;
+  margin: 0;
+  color: #18213a;
+  font-size: 28px;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.privacy-header p {
+  display: block;
+  margin: 6px 0 0;
+  color: #7b8598;
+  font-size: 14px;
+  line-height: 1.45;
+}
+
+/* =========================
+   SECURITY STATUS
+   ========================= */
+
+.security-status-card {
+  display: flex !important;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 20px;
+  border: 1px solid #d7eddf;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #f1fff6 0%, #ffffff 100%);
+  box-shadow: 0 8px 28px rgba(90, 55, 180, 0.06);
+}
+
+.security-status-icon {
+  width: 54px;
+  height: 54px;
+  flex: 0 0 54px;
+  border-radius: 16px;
+  background: #eee9ff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.security-status-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.security-status-content h2 {
+  margin: 0 0 5px;
+  color: #6738ee;
+  font-size: 17px;
+  font-weight: 800;
+}
+
+.security-status-content p {
+  margin: 0;
+  color: #657084;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+.security-badge {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #eee9ff;
+  color: #6738ee;
+  font-size: 11px;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* =========================
+   COMMON CARD
+   ========================= */
+
+.privacy-card {
+  display: block !important;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 22px;
+  border: 1px solid #e7e2f3;
+  border-radius: 20px;
+  background: #ffffff;
+  box-shadow: 0 7px 25px rgba(90, 55, 180, 0.055);
+}
+
+.privacy-card-header {
+  display: flex !important;
+  align-items: center;
+  gap: 13px;
+  width: 100%;
+  margin: 0 0 20px;
+}
+
+.privacy-icon {
+  width: 48px;
+  height: 48px;
+  flex: 0 0 48px;
+  border-radius: 14px;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.privacy-icon.blue {
+  background: #eee9ff;
+}
+
+.privacy-icon.green {
+  background: #eee9ff;
+}
+
+.privacy-icon.orange {
+  background: #f5f1ff;
+}
+
+.privacy-icon.purple {
+  background: #eee9ff;
+}
+
+.privacy-card-header > div:last-child {
+  min-width: 0;
+}
+
+.privacy-card-header h2 {
+  margin: 0 0 4px;
+  color: #18213a;
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.privacy-card-header p {
+  margin: 0;
+  color: #7b8496;
+  font-size: 13px;
+  line-height: 1.45;
+}
+
+/* =========================
+   ACCOUNT SECURITY
+   ========================= */
+
+.security-list {
+  display: flex !important;
+  flex-direction: column;
+  width: 100%;
+}
+
+.security-item {
+  display: grid !important;
+  grid-template-columns: 42px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  width: 100%;
+  padding: 15px 0;
+  border-top: 1px solid #eeeaf5;
+}
+
+.security-item:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.security-item:last-child {
+  padding-bottom: 0;
+}
+
+.security-item-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 12px;
+  background: #f4f1fa;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 19px;
+}
+
+.security-item-content {
+  min-width: 0;
+}
+
+.security-item strong {
+  display: block;
+  margin: 0 0 3px;
+  color: #252d3d;
+  font-size: 14px;
+  line-height: 1.3;
+  font-weight: 750;
+}
+
+.security-item-content span {
+  display: block;
+  color: #7d8798;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.verified-small {
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 9px;
+  border-radius: 999px;
+  background: #eee9ff;
+  color: #6738ee !important;
+  font-size: 11px !important;
+  font-weight: 800;
+  white-space: nowrap;
+}
+
+/* =========================
+   PERSONAL DATA
+   ========================= */
+
+.data-grid {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  width: 100%;
+}
+
+.data-box {
+  display: grid !important;
+  grid-template-columns: 38px minmax(0, 1fr);
+  column-gap: 10px;
+  align-items: center;
+  min-width: 0;
+  padding: 15px;
+  border: 1px solid #edf0f4;
+  border-radius: 15px;
+  background: #fbfaff;
+}
+
+.data-box > span {
+  grid-row: 1 / span 2;
+  width: 38px;
+  height: 38px;
+  border-radius: 11px;
+  background: #ffffff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.data-box strong {
+  display: block;
+  color: #25304b;
+  font-size: 13px;
+  line-height: 1.3;
+  font-weight: 750;
+}
+
+.data-box small {
+  display: block;
+  margin-top: 3px;
+  color: #7e8798;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* =========================
+   LOCATION
+   ========================= */
+
+.location-info {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 14px;
+  width: 100%;
+  padding: 16px;
+  border: 1px solid #d9ccff;
+  border-radius: 15px;
+  background: #faf8ff;
+}
+
+.location-info-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: 12px;
+  background: #f1ecff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.location-info > div:last-child {
+  min-width: 0;
+}
+
+.location-info strong {
+  display: block;
+  margin: 0 0 5px;
+  color: #302642;
+  font-size: 14px;
+}
+
+.location-info p {
+  margin: 0 0 7px;
+  color: #6d6580;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.location-info small {
+  display: block;
+  color: #8d86a0;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+/* =========================
+   DATA PROTECTION
+   ========================= */
+
+.protection-list {
+  display: flex !important;
+  flex-direction: column;
+  gap: 11px;
+  width: 100%;
+}
+
+.protection-list > div {
+  display: flex !important;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 12px 14px;
+  border: 1px solid #edf0f5;
+  border-radius: 13px;
+  background: #fbfaff;
+}
+
+.protection-list > div > span {
+  width: 23px;
+  height: 23px;
+  flex: 0 0 23px;
+  border-radius: 50%;
+  background: #eee9ff;
+  color: #6738ee;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 800;
+}
+
+.protection-list p {
+  margin: 1px 0 0;
+  color: #616c80;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+/* =========================
+   POLICY / TERMS
+   ========================= */
+
+.privacy-action {
+  width: 100%;
+  min-height: 68px;
+  border: 1px solid #edf0f4;
+  border-radius: 15px;
+  background: #fafbfc;
+  padding: 13px 15px;
+  display: flex !important;
+  align-items: center;
+  gap: 13px;
+  text-align: left;
+  cursor: pointer;
+  color: inherit;
+  transition: 0.2s ease;
+}
+
+.privacy-action:hover {
+  background: #f7f3ff;
+  border-color: #ded5ef;
+  transform: translateY(-1px);
+}
+
+.action-leading-icon {
+  width: 42px;
+  height: 42px;
+  flex: 0 0 42px;
+  border-radius: 12px;
+  background: #eee9ff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.privacy-action-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.privacy-action-content strong {
+  display: block;
+  margin: 0 0 4px;
+  color: #25304b;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.privacy-action-content span {
+  display: block;
+  color: #7d7890;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.action-arrow {
+  flex: 0 0 auto;
+  color: #6b6380;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* =========================
+   DELETE ACCOUNT
+   ========================= */
+
+.delete-card {
+  display: flex !important;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+  margin: 0 0 18px;
+  padding: 21px;
+  border: 1px solid #eadcff;
+  border-radius: 20px;
+  background: #faf8ff;
+}
+
+.delete-icon {
+  width: 50px;
+  height: 50px;
+  flex: 0 0 50px;
+  border-radius: 14px;
+  background: #eee9ff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 23px;
+}
+
+.delete-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.delete-content h2 {
+  margin: 0 0 5px;
+  color: #5b2a8e;
+  font-size: 17px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.delete-content p {
+  margin: 0 0 6px;
+  color: #70687f;
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+.delete-content small {
+  display: block;
+  color: #8d849d;
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+
+.delete-account-btn {
+  flex: 0 0 auto;
+  border: 1px solid #cdbcf3;
+  border-radius: 12px;
+  padding: 11px 15px;
+  background: #ffffff;
+  color: #6738ee;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.delete-account-btn:hover {
+  background: #f1ecff;
+}
+
+/* =========================
+   PRIVACY SUPPORT
+   ========================= */
+
+.privacy-support {
+  display: flex !important;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+  margin: 0 0 14px;
+  padding: 18px;
+  border: 1px solid #ded5f2;
+  border-radius: 18px;
+  background: linear-gradient(135deg, #f5f1ff, #ffffff);
+}
+
+.privacy-support-icon {
+  width: 46px;
+  height: 46px;
+  flex: 0 0 46px;
+  border-radius: 13px;
+  background: #eee9ff;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.privacy-support-content {
+  flex: 1;
+  min-width: 0;
+}
+
+.privacy-support h3 {
+  margin: 0 0 4px;
+  color: #273149;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.privacy-support p {
+  margin: 0;
+  color: #778196;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
+.privacy-support button {
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 11px;
+  padding: 10px 14px;
+  background: #211b3e;
+  color: #ffffff;
+  font-size: 11px;
+  font-weight: 800;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: 0.2s ease;
+}
+
+.privacy-support button:hover {
+  opacity: 0.9;
+  transform: translateY(-1px);
+}
+
+/* =========================
+   LOGOUT
+   ========================= */
+
+.privacy-logout {
+  display: block !important;
+  width: 100%;
+  border: 1px solid #e8ebf0;
+  border-radius: 15px;
+  background: #ffffff;
+  color: #7a4a9c;
+  padding: 14px;
+  font-size: 13px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.privacy-logout:hover {
+  background: #f7f1ff;
+  border-color: #ddd1f0;
+}
+
+/* =========================
+   FOOTER
+   ========================= */
+
+.privacy-footer {
+  display: block !important;
+  width: 100%;
+  padding: 18px 0 0;
+  text-align: center;
+  color: #9aa2b1;
+  font-size: 10px;
+}
+
+/* =========================
+   TABLET
+   ========================= */
+
+@media (max-width: 768px) {
+  .privacy-security-page {
+    padding: 20px 16px 105px;
+  }
+
+  .privacy-header h1 {
+    font-size: 24px;
+  }
+
+  .security-status-card {
+    align-items: flex-start;
+  }
+
+  .security-badge {
+    margin-left: auto;
+  }
+
+  .data-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .delete-card {
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+
+  .delete-content {
+    min-width: calc(100% - 70px);
+  }
+
+  .delete-account-btn {
+    width: 100%;
+  }
+}
+
+/* =========================
+   MOBILE
+   ========================= */
+
+@media (max-width: 520px) {
+  .privacy-security-page {
+    padding: 16px 12px 100px;
+  }
+
+  .privacy-header {
+    gap: 11px;
+    margin-bottom: 18px;
+  }
+
+  .privacy-back-btn {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+    border-radius: 12px;
+    font-size: 21px;
+  }
+
+  .privacy-label {
+    font-size: 9px;
+  }
+
+  .privacy-header h1 {
+    font-size: 21px;
+  }
+
+  .privacy-header p {
+    font-size: 11px;
+  }
+
+  .security-status-card {
+    display: grid !important;
+    grid-template-columns: 48px minmax(0, 1fr);
+    gap: 12px;
+    padding: 16px;
+    border-radius: 17px;
+  }
+
+  .security-status-icon {
+    width: 48px;
+    height: 48px;
+    flex-basis: 48px;
+    border-radius: 13px;
+    font-size: 24px;
+  }
+
+  .security-status-content h2 {
+    font-size: 14px;
+  }
+
+  .security-status-content p {
+    font-size: 11px;
+  }
+
+  .security-badge {
+    grid-column: 1 / -1;
+    justify-self: start;
+    margin-left: 0;
+    padding: 6px 10px;
+    font-size: 10px;
+  }
+
+  .privacy-card {
+    padding: 16px;
+    border-radius: 17px;
+    margin-bottom: 13px;
+  }
+
+  .privacy-card-header {
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+
+  .privacy-icon {
+    width: 42px;
+    height: 42px;
+    flex-basis: 42px;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+
+  .privacy-card-header h2 {
+    font-size: 15px;
+  }
+
+  .privacy-card-header p {
+    font-size: 11px;
+  }
+
+  .security-item {
+    grid-template-columns: 36px minmax(0, 1fr);
+    gap: 10px;
+    padding: 13px 0;
+  }
+
+  .security-item-icon {
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+
+  .security-item strong {
+    font-size: 12px;
+  }
+
+  .security-item-content span {
+    font-size: 10.5px;
+  }
+
+  .verified-small {
+    grid-column: 2;
+    justify-self: start;
+    padding: 4px 8px;
+    font-size: 9px !important;
+  }
+
+  .data-box {
+    padding: 13px;
+  }
+
+  .data-box strong {
+    font-size: 12px;
+  }
+
+  .data-box small {
+    font-size: 10px;
+  }
+
+  .location-info {
+    padding: 13px;
+    gap: 10px;
+  }
+
+  .location-info-icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+    font-size: 18px;
+  }
+
+  .location-info strong {
+    font-size: 12px;
+  }
+
+  .location-info p,
+  .location-info small {
+    font-size: 10.5px;
+  }
+
+  .protection-list {
+    gap: 8px;
+  }
+
+  .protection-list > div {
+    padding: 10px;
+  }
+
+  .protection-list p {
+    font-size: 10.5px;
+  }
+
+  .privacy-action {
+    min-height: 60px;
+    padding: 11px 12px;
+    gap: 10px;
+  }
+
+  .action-leading-icon {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+    border-radius: 10px;
+    font-size: 18px;
+  }
+
+  .privacy-action-content strong {
+    font-size: 12px;
+  }
+
+  .privacy-action-content span {
+    font-size: 10px;
+  }
+
+  .action-arrow {
+    font-size: 18px;
+  }
+
+  .delete-card {
+    padding: 16px;
+    gap: 11px;
+    border-radius: 17px;
+  }
+
+  .delete-icon {
+    width: 43px;
+    height: 43px;
+    flex-basis: 43px;
+    border-radius: 12px;
+    font-size: 20px;
+  }
+
+  .delete-content {
+    min-width: calc(100% - 54px);
+  }
+
+  .delete-content h2 {
+    font-size: 15px;
+  }
+
+  .delete-content p {
+    font-size: 10.5px;
+  }
+
+  .delete-content small {
+    font-size: 9.5px;
+  }
+
+  .delete-account-btn {
+    padding: 11px;
+    font-size: 11px;
+  }
+
+  .privacy-support {
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 15px;
+  }
+
+  .privacy-support-icon {
+    width: 40px;
+    height: 40px;
+    flex-basis: 40px;
+    font-size: 19px;
+  }
+
+  .privacy-support-content {
+    width: calc(100% - 52px);
+    flex-basis: calc(100% - 52px);
+  }
+
+  .privacy-support h3 {
+    font-size: 13px;
+  }
+
+  .privacy-support p {
+    font-size: 10px;
+  }
+
+  .privacy-support button {
+    width: 100%;
+    margin-top: 2px;
+    padding: 10px;
+    font-size: 10px;
+  }
+
+  .privacy-logout {
+    padding: 12px;
+    font-size: 11px;
+  }
+
+  .privacy-footer {
+    font-size: 9px;
+  }
+}
+
+
+/* =========================================================
+   MAXIGO RIDER PRIVACY & SECURITY
+   Same visual language as MaxiGo Partner Panel
+========================================================= */
+
+.privacy-security-page {
+  background: transparent;
+  color: #18213a;
+}
+
+.privacy-back-btn {
+  border-color: #e5e0f1;
+  color: #18213a;
+}
+
+.privacy-back-btn:hover {
+  background: #f5f1ff;
+  color: #6738ee;
+  border-color: #d9ccff;
+}
+
+.privacy-label {
+  color: #6738ee;
+}
+
+.security-status-card {
+  border-color: #d9ccff;
+  background:
+    linear-gradient(
+      135deg,
+      #f5f1ff 0%,
+      #ffffff 100%
+    );
+  box-shadow: 0 8px 28px rgba(90, 55, 180, 0.06);
+}
+
+.security-status-icon {
+  background:
+    linear-gradient(
+      145deg,
+      #f4efff 0%,
+      #ece4ff 100%
+    );
+}
+
+.security-status-content h2 {
+  color: #6738ee;
+}
+
+.security-badge {
+  background: #eee9ff;
+  color: #6738ee;
+}
+
+.privacy-card {
+  border-color: #e7e2f3;
+  box-shadow: 0 7px 25px rgba(90, 55, 180, 0.055);
+}
+
+.privacy-card:hover {
+  border-color: #ded5ef;
+}
+
+.privacy-icon.blue,
+.privacy-icon.green,
+.privacy-icon.orange,
+.privacy-icon.purple,
+.action-leading-icon,
+.location-info-icon,
+.privacy-support-icon {
+  background:
+    linear-gradient(
+      145deg,
+      #f4efff 0%,
+      #ece4ff 100%
+    );
+}
+
+.data-box,
+.protection-list > div,
+.privacy-action {
+  border-color: #eeeaf5;
+  background: #fbfaff;
+}
+
+.privacy-action:hover {
+  background: #f5f1ff;
+  border-color: #d9ccff;
+}
+
+.action-arrow {
+  color: #6738ee;
+}
+
+.location-info {
+  border-color: #d9ccff;
+  background:
+    linear-gradient(
+      135deg,
+      #f5f1ff,
+      #fbfaff
+    );
+}
+
+.protection-list > div > span {
+  background: #eee9ff;
+  color: #6738ee;
+}
+
+.privacy-support {
+  border-color: #ded5f2;
+  background:
+    linear-gradient(
+      135deg,
+      #f5f1ff,
+      #ffffff
+    );
+}
+
+.privacy-support button {
+  background:
+    linear-gradient(
+      135deg,
+      #6632f4 0%,
+      #843ce8 100%
+    );
+}
+
+.privacy-support button:hover {
+  opacity: 1;
+  transform: translateY(-1px);
+  box-shadow: 0 8px 18px rgba(103, 56, 238, 0.18);
+}
+
+.privacy-logout {
+  border-color: #ded5ef;
+  color: #6738ee;
+}
+
+.privacy-logout:hover {
+  background: #f5f1ff;
+  border-color: #d9ccff;
+  color: #5425d8;
+}

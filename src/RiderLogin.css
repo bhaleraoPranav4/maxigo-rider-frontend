@@ -1,0 +1,755 @@
+/* =========================================================
+   RIDER LOGIN PAGE
+========================================================= */
+
+.rider-login-page {
+  min-height: 100vh;
+  background: #f7f5ff;
+  color: #172554;
+}
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.rider-login-header {
+  height: 110px;
+  padding: 0 6%;
+
+  background: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  border-bottom: 1px solid #eeeaff;
+}
+
+
+.rider-login-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  min-width: 0;
+}
+
+
+/* =========================================================
+   RIDER LOGO
+========================================================= */
+
+.rider-login-logo {
+  width: 280px;
+  height: 90px;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+  flex-shrink: 0;
+
+  overflow: hidden;
+}
+
+
+.rider-login-logo img {
+  width: 100%;
+  height: 100%;
+
+  object-fit: contain;
+  object-position: left center;
+
+  display: block;
+}
+
+
+/* =========================================================
+   BRAND NAME
+========================================================= */
+
+.rider-login-brand-name {
+  font-size: 25px;
+  font-weight: 800;
+
+  color: #171717;
+}
+
+
+.rider-login-brand small {
+  color: #6b7280;
+
+  font-size: 12px;
+  font-weight: 600;
+}
+
+
+.rider-login-help {
+  color: #64748b;
+
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* =========================================================
+   MAIN
+========================================================= */
+
+.rider-login-container {
+  max-width: 1250px;
+
+  margin: 0 auto;
+
+  padding: 70px 30px;
+
+  display: grid;
+
+  grid-template-columns:
+    1fr 480px;
+
+  gap: 80px;
+
+  align-items: center;
+}
+
+
+/* =========================================================
+   LEFT
+========================================================= */
+
+.rider-login-left {
+  padding-right: 20px;
+}
+
+
+.rider-login-badge {
+  display: inline-flex;
+
+  padding: 8px 14px;
+
+  border-radius: 50px;
+
+  background: #eee7ff;
+
+  color: #6d28d9;
+
+  font-size: 12px;
+  font-weight: 800;
+
+  margin-bottom: 20px;
+}
+
+
+.rider-login-left h1 {
+  margin: 0;
+
+  font-size: 50px;
+
+  line-height: 1.1;
+
+  color: #172554;
+}
+
+
+.rider-login-left h1 span {
+  color: #6d28d9;
+}
+
+
+.rider-login-description {
+  max-width: 600px;
+
+  margin-top: 22px;
+  margin-bottom: 35px;
+
+  font-size: 17px;
+
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   BENEFITS
+========================================================= */
+
+.rider-login-benefits {
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 18px;
+}
+
+
+.rider-login-benefit {
+  display: flex;
+
+  align-items: center;
+
+  gap: 16px;
+
+  padding: 18px;
+
+  background: #ffffff;
+
+  border: 1px solid #ebe7ff;
+
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 25px
+    rgba(78, 48, 150, 0.05);
+}
+
+
+.rider-login-benefit-icon {
+  width: 52px;
+  height: 52px;
+
+  flex-shrink: 0;
+
+  border-radius: 14px;
+
+  background: #eee8ff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+
+.rider-login-benefit h3 {
+  margin: 0 0 4px;
+
+  font-size: 16px;
+
+  color: #172554;
+}
+
+
+.rider-login-benefit p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #64748b;
+}
+
+
+/* =========================================================
+   LOGIN CARD
+========================================================= */
+
+.rider-login-card {
+  background: #ffffff;
+
+  border: 1px solid #e7e1ff;
+
+  border-radius: 24px;
+
+  padding: 35px;
+
+  box-shadow:
+    0 20px 60px
+    rgba(76, 48, 150, 0.12);
+}
+
+
+.rider-login-card-header {
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin-bottom: 30px;
+}
+
+
+.rider-login-card-header h2 {
+  margin: 0 0 7px;
+
+  font-size: 28px;
+
+  color: #172554;
+}
+
+
+.rider-login-card-header p {
+  margin: 0;
+
+  font-size: 13px;
+
+  color: #64748b;
+
+  line-height: 1.5;
+}
+
+
+.rider-login-icon {
+  width: 52px;
+  height: 52px;
+
+  border-radius: 15px;
+
+  background: #eee8ff;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  font-size: 24px;
+}
+
+
+/* =========================================================
+   INPUT
+========================================================= */
+
+.rider-login-input-group {
+  margin-bottom: 22px;
+}
+
+
+.rider-login-input-group label {
+  display: block;
+
+  margin-bottom: 8px;
+
+  font-size: 13px;
+
+  font-weight: 700;
+
+  color: #334155;
+}
+
+
+.rider-login-input-group label b {
+  color: #ef4444;
+
+  margin-left: 3px;
+}
+
+
+/* =========================================================
+   MOBILE INPUT
+========================================================= */
+
+.rider-mobile-input {
+  display: flex;
+
+  height: 52px;
+
+  border: 1px solid #ddd6fe;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+
+.rider-mobile-input span {
+  width: 55px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  background: #f7f5ff;
+
+  color: #64748b;
+
+  font-size: 14px;
+
+  font-weight: 700;
+
+  border-right: 1px solid #e5e7eb;
+}
+
+
+.rider-mobile-input input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  padding: 0 14px;
+
+  font-size: 15px;
+
+  color: #172554;
+
+  background: #ffffff;
+}
+
+
+.rider-mobile-input:focus-within {
+  border-color: #7c3aed;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(124, 58, 237, 0.10);
+}
+
+
+/* =========================================================
+   PIN
+========================================================= */
+
+.rider-pin-input {
+  display: flex;
+
+  height: 52px;
+
+  border: 1px solid #ddd6fe;
+
+  border-radius: 12px;
+
+  overflow: hidden;
+
+  background: #ffffff;
+}
+
+
+.rider-pin-input input {
+  flex: 1;
+
+  border: none;
+
+  outline: none;
+
+  padding: 0 14px;
+
+  font-size: 15px;
+
+  color: #172554;
+
+  background: #ffffff;
+}
+
+
+.rider-pin-input button {
+  width: 52px;
+
+  border: none;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+
+.rider-pin-input:focus-within {
+  border-color: #7c3aed;
+
+  box-shadow:
+    0 0 0 3px
+    rgba(124, 58, 237, 0.10);
+}
+
+
+.rider-login-help-text {
+  display: block;
+
+  margin-top: 7px;
+
+  font-size: 11px;
+
+  color: #94a3b8;
+}
+
+
+/* =========================================================
+   LOGIN BUTTON
+========================================================= */
+
+.rider-login-button {
+  width: 100%;
+
+  height: 54px;
+
+  border: none;
+
+  border-radius: 12px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #7c3aed,
+      #6d28d9
+    );
+
+  color: #ffffff;
+
+  font-size: 15px;
+
+  font-weight: 800;
+
+  cursor: pointer;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  gap: 12px;
+
+  box-shadow:
+    0 10px 25px
+    rgba(109, 40, 217, 0.25);
+
+  transition: 0.2s ease;
+}
+
+
+.rider-login-button:hover {
+  transform: translateY(-1px);
+
+  box-shadow:
+    0 14px 30px
+    rgba(109, 40, 217, 0.30);
+}
+
+
+.rider-login-button:disabled {
+  opacity: 0.6;
+
+  cursor: not-allowed;
+
+  transform: none;
+}
+
+
+/* =========================================================
+   SECURITY
+========================================================= */
+
+.rider-login-security {
+  margin-top: 18px;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  background: #f8fafc;
+
+  color: #64748b;
+
+  text-align: center;
+
+  font-size: 11px;
+}
+
+
+/* =========================================================
+   REGISTER
+========================================================= */
+
+.rider-register-link {
+  margin-top: 25px;
+
+  text-align: center;
+
+  color: #64748b;
+
+  font-size: 13px;
+}
+
+
+.rider-register-link button {
+  margin-left: 5px;
+
+  border: none;
+
+  background: transparent;
+
+  color: #6d28d9;
+
+  font-weight: 800;
+
+  cursor: pointer;
+}
+
+
+.rider-register-link button:hover {
+  text-decoration: underline;
+}
+
+
+/* =========================================================
+   FOOTER
+========================================================= */
+
+.rider-login-footer {
+  padding: 20px;
+
+  text-align: center;
+
+  color: #94a3b8;
+
+  font-size: 12px;
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media (max-width: 1100px) {
+
+  .rider-login-logo {
+    width: 230px;
+    height: 80px;
+  }
+
+  .rider-login-container {
+    gap: 50px;
+  }
+}
+
+
+@media (max-width: 950px) {
+
+  .rider-login-container {
+    grid-template-columns: 1fr;
+
+    gap: 40px;
+
+    max-width: 600px;
+  }
+
+
+  .rider-login-left {
+    text-align: center;
+
+    padding: 0;
+  }
+
+
+  .rider-login-left h1 {
+    font-size: 40px;
+  }
+
+
+  .rider-login-description {
+    margin-left: auto;
+
+    margin-right: auto;
+  }
+
+
+  .rider-login-benefit {
+    text-align: left;
+  }
+
+
+  .rider-login-header {
+    padding: 0 30px;
+  }
+
+
+  .rider-login-logo {
+    width: 220px;
+    height: 75px;
+  }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 600px) {
+
+  .rider-login-header {
+    height: 90px;
+
+    padding: 0 20px;
+  }
+
+
+  .rider-login-logo {
+    width: 180px;
+    height: 65px;
+  }
+
+
+  .rider-login-brand {
+    gap: 8px;
+  }
+
+
+  .rider-login-brand-name {
+    font-size: 21px;
+  }
+
+
+  .rider-login-brand small {
+    font-size: 11px;
+  }
+
+
+  .rider-login-help {
+    display: none;
+  }
+
+
+  .rider-login-container {
+    padding: 40px 18px;
+  }
+
+
+  .rider-login-left h1 {
+    font-size: 34px;
+  }
+
+
+  .rider-login-card {
+    padding: 25px 20px;
+
+    border-radius: 18px;
+  }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 400px) {
+
+  .rider-login-logo {
+    width: 145px;
+    height: 55px;
+  }
+
+
+  .rider-login-brand-name {
+    font-size: 19px;
+  }
+
+
+  .rider-login-brand small {
+    font-size: 10px;
+  }
+
+
+  .rider-login-header {
+    padding: 0 14px;
+  }
+}

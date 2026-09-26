@@ -1,0 +1,882 @@
+/* =========================================================
+   MAXIGO RIDER REGISTRATION
+   Same visual language as MaxiGo Partner Panel
+   ========================================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  margin: 0;
+  min-height: 100%;
+}
+
+body {
+  font-family:
+    Inter,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #f7f5ff;
+  color: #18213a;
+}
+
+/* ================= PAGE ================= */
+
+.registration-page {
+  min-height: 100vh;
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(103, 56, 238, 0.08),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(132, 60, 232, 0.05),
+      transparent 28%
+    ),
+    #f7f5ff;
+  color: #18213a;
+  padding-bottom: 20px;
+}
+
+/* ================= HEADER ================= */
+
+.registration-header {
+  height: 76px;
+  background: rgba(255, 255, 255, 0.97);
+  border-bottom: 1px solid #e8e3f4;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 6%;
+
+  position: sticky;
+  top: 0;
+  z-index: 50;
+
+  box-shadow:
+    0 3px 20px rgba(90, 55, 180, 0.05);
+}
+
+.mazigo-brand {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+}
+
+.mazigo-logo {
+  width: 44px;
+  height: 44px;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6632f4 0%,
+      #843ce8 100%
+    );
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 5px;
+  overflow: hidden;
+
+  box-shadow:
+    0 8px 22px rgba(103, 56, 238, 0.25);
+}
+
+.mazigo-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.mazigo-name {
+  font-size: 21px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  color: #18213a;
+  line-height: 1.05;
+}
+
+.mazigo-brand small {
+  display: block;
+  margin-top: 3px;
+  color: #8994a5;
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.header-help {
+  color: #718096;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+/* ================= MAIN ================= */
+
+.registration-container {
+  width: 88%;
+  max-width: 1250px;
+  margin: auto;
+  padding: 50px 0;
+
+  display: grid;
+  grid-template-columns: 1fr 0.95fr;
+  gap: 65px;
+  align-items: start;
+}
+
+/* ================= LEFT ================= */
+
+.registration-left {
+  padding-top: 35px;
+}
+
+.partner-badge {
+  display: inline-flex;
+  align-items: center;
+
+  padding: 8px 13px;
+
+  background: #eee9ff;
+  color: #6738ee;
+
+  border: 1px solid #ddd2f8;
+  border-radius: 8px;
+
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.7px;
+
+  margin-bottom: 20px;
+
+  box-shadow:
+    0 5px 16px rgba(103, 56, 238, 0.06);
+}
+
+.registration-left h1 {
+  margin: 0;
+
+  font-size: 48px;
+  line-height: 1.1;
+
+  color: #18213a;
+  font-weight: 850;
+}
+
+.registration-left h1 span {
+  color: #6738ee;
+}
+
+.registration-description {
+  max-width: 600px;
+
+  font-size: 17px;
+  line-height: 1.8;
+
+  color: #718096;
+
+  margin: 20px 0 35px;
+}
+
+/* ================= BENEFITS ================= */
+
+.benefits-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.benefit-card {
+  background: #ffffff;
+
+  border: 1px solid #e5e0f0;
+  border-radius: 19px;
+
+  padding: 21px;
+
+  display: flex;
+  gap: 15px;
+
+  cursor: pointer;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+
+  box-shadow:
+    0 7px 24px rgba(45, 29, 85, 0.045);
+}
+
+.benefit-card:hover {
+  transform: translateY(-5px);
+
+  border-color: #d0c1f3;
+
+  box-shadow:
+    0 15px 35px rgba(103, 56, 238, 0.12);
+}
+
+.benefit-card:active {
+  transform: scale(0.98);
+}
+
+.benefit-icon {
+  width: 50px;
+  height: 50px;
+
+  flex-shrink: 0;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f4efff 0%,
+      #ece4ff 100%
+    );
+
+  border: 1px solid #e4daf8;
+  border-radius: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 23px;
+
+  box-shadow:
+    0 6px 16px rgba(103, 56, 238, 0.07);
+}
+
+.benefit-card h3 {
+  margin: 0 0 5px;
+
+  font-size: 16px;
+  color: #25304b;
+}
+
+.benefit-card p {
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 1.5;
+
+  color: #8190a5;
+}
+
+/* ================= FORM CARD ================= */
+
+.registration-card {
+  background: #ffffff;
+
+  border: 1px solid #e4def4;
+  border-radius: 26px;
+
+  padding: 32px;
+
+  box-shadow:
+    0 20px 55px rgba(73, 49, 130, 0.09);
+}
+
+.form-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+
+.form-heading h2 {
+  margin: 0;
+  color: #18213a;
+  font-size: 25px;
+  line-height: 1.2;
+}
+
+.form-heading p {
+  margin: 7px 0 0;
+
+  color: #8490a2;
+
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.step-number {
+  flex-shrink: 0;
+
+  background: #eee9ff;
+  color: #6738ee;
+
+  border: 1px solid #ddd2f8;
+
+  padding: 8px 11px;
+
+  border-radius: 9px;
+
+  font-size: 12px;
+  font-weight: 800;
+}
+
+/* ================= PROGRESS ================= */
+
+.progress-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 27px;
+}
+
+.progress-step {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  color: #a0a9b7;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.progress-step span {
+  width: 28px;
+  height: 28px;
+
+  border-radius: 50%;
+
+  background: #edf0f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 11px;
+}
+
+.progress-step.active {
+  color: #6738ee;
+}
+
+.progress-step.active span {
+  background:
+    linear-gradient(
+      135deg,
+      #6632f4 0%,
+      #843ce8 100%
+    );
+
+  color: #ffffff;
+
+  box-shadow:
+    0 7px 16px rgba(103, 56, 238, 0.20);
+}
+
+.progress-line {
+  height: 2px;
+  width: 55px;
+
+  background: #e4def2;
+
+  margin: 0 12px;
+}
+
+/* ================= FORM ================= */
+
+.registration-form {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.input-group label {
+  font-size: 13px;
+  font-weight: 750;
+  color: #243b5c;
+}
+
+.input-group label b {
+  color: #6738ee;
+}
+
+.input-group label small {
+  color: #9aa4b2;
+  font-weight: 500;
+  margin-left: 5px;
+}
+
+.input-group input,
+.input-group textarea,
+.input-group select {
+  width: 100%;
+
+  border: 1px solid #dce3ec;
+  border-radius: 12px;
+
+  padding: 13px 14px;
+
+  font-size: 14px;
+  color: #243b5c;
+  background: #ffffff;
+
+  outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease,
+    background 0.2s ease;
+
+  font-family: inherit;
+}
+
+.input-group textarea {
+  resize: vertical;
+  min-height: 85px;
+}
+
+.input-group input:focus,
+.input-group textarea:focus,
+.input-group select:focus {
+  border-color: #6738ee;
+
+  box-shadow:
+    0 0 0 4px rgba(103, 56, 238, 0.09);
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #a4adba;
+}
+
+/* ================= MOBILE INPUT ================= */
+
+.mobile-input {
+  display: flex;
+
+  border: 1px solid #dce3ec;
+  border-radius: 12px;
+
+  overflow: hidden;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.mobile-input:focus-within {
+  border-color: #6738ee;
+
+  box-shadow:
+    0 0 0 4px rgba(103, 56, 238, 0.09);
+}
+
+.mobile-input span {
+  background: #f7f5ff;
+  border-right: 1px solid #e1e6ed;
+
+  display: flex;
+  align-items: center;
+
+  padding: 0 13px;
+
+  color: #56657b;
+
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.mobile-input input {
+  border: none !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+}
+
+/* ================= BUTTON ================= */
+
+.primary-button {
+  width: 100%;
+
+  border: none;
+  border-radius: 12px;
+
+  padding: 14px;
+
+  background:
+    linear-gradient(
+      135deg,
+      #6632f4 0%,
+      #843ce8 100%
+    );
+
+  color: #ffffff;
+
+  font-size: 14px;
+  font-weight: 800;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+
+  box-shadow:
+    0 10px 25px rgba(103, 56, 238, 0.22);
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.primary-button:hover {
+  transform: translateY(-2px);
+
+  background:
+    linear-gradient(
+      135deg,
+      #5b2de0 0%,
+      #7432d8 100%
+    );
+
+  box-shadow:
+    0 14px 30px rgba(103, 56, 238, 0.30);
+}
+
+.primary-button:active {
+  transform: scale(0.98);
+}
+
+.primary-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
+
+/* ================= OTP ================= */
+
+.otp-box {
+  background:
+    linear-gradient(
+      145deg,
+      #faf8ff 0%,
+      #f4efff 100%
+    );
+
+  border: 1px solid #ded3f5;
+
+  padding: 16px;
+
+  border-radius: 14px;
+}
+
+.verify-button {
+  width: 100%;
+
+  border: none;
+
+  background: #211b3e;
+  color: #ffffff;
+
+  padding: 12px;
+
+  border-radius: 10px;
+
+  font-weight: 750;
+
+  cursor: pointer;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease;
+}
+
+.verify-button:hover {
+  background: #33245f;
+  transform: translateY(-1px);
+}
+
+.success-message {
+  background: #f3efff;
+  color: #6738ee;
+
+  border: 1px solid #d9ccff;
+
+  padding: 11px 13px;
+
+  border-radius: 10px;
+
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* ================= BANK SECTION ================= */
+
+.bank-section {
+  margin-top: 5px;
+
+  padding: 21px;
+
+  border: 1px solid #e1daf0;
+  border-radius: 18px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #fbfaff,
+      #ffffff
+    );
+
+  box-shadow:
+    0 5px 20px rgba(103, 56, 238, 0.035);
+}
+
+.bank-section-header {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+
+  margin-bottom: 20px;
+
+  padding-bottom: 16px;
+
+  border-bottom: 1px solid #e8e2f3;
+}
+
+.bank-section-icon {
+  width: 45px;
+  height: 45px;
+
+  border-radius: 13px;
+
+  background:
+    linear-gradient(
+      145deg,
+      #f4efff 0%,
+      #ece4ff 100%
+    );
+
+  border: 1px solid #e0d5f6;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 22px;
+}
+
+.bank-section-header h3 {
+  margin: 0;
+
+  color: #18213a;
+
+  font-size: 17px;
+}
+
+.bank-section-header p {
+  margin: 4px 0 0;
+
+  color: #8995a6;
+
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+.bank-section .input-group {
+  margin-bottom: 15px;
+}
+
+.bank-section .input-group:last-child {
+  margin-bottom: 0;
+}
+
+/* ================= HELP ================= */
+
+.field-help {
+  color: #96a1b1;
+  font-size: 11px;
+}
+
+.security-note {
+  text-align: center;
+  color: #8d98a8;
+  font-size: 11px;
+  padding-top: 4px;
+}
+
+.terms-text {
+  text-align: center;
+  color: #96a0ae;
+  font-size: 10px;
+  line-height: 1.6;
+}
+
+.terms-text b {
+  color: #6738ee;
+}
+
+/* ================= FOOTER ================= */
+
+.registration-footer {
+  width: 88%;
+  max-width: 1250px;
+
+  margin: auto;
+
+  border-top: 1px solid #e2dced;
+
+  padding: 25px 0;
+
+  color: #96a2b3;
+
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 950px) {
+  .registration-container {
+    grid-template-columns: 1fr;
+    gap: 35px;
+    width: 90%;
+  }
+
+  .registration-left {
+    padding-top: 0;
+  }
+
+  .registration-left h1 {
+    font-size: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .registration-header {
+    padding: 0 18px;
+  }
+
+  .header-help {
+    display: none;
+  }
+
+  .registration-container {
+    width: 94%;
+    padding: 30px 0;
+  }
+
+  .registration-left h1 {
+    font-size: 32px;
+  }
+
+  .registration-description {
+    font-size: 15px;
+  }
+
+  .benefits-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .registration-card {
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .form-heading h2 {
+    font-size: 21px;
+  }
+
+  .bank-section {
+    padding: 16px;
+  }
+
+  .bank-section-header {
+    align-items: flex-start;
+  }
+
+  .progress-line {
+    width: 30px;
+    margin: 0 8px;
+  }
+}
+
+@media (max-width: 420px) {
+  .registration-header {
+    height: 68px;
+  }
+
+  .mazigo-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mazigo-name {
+    font-size: 19px;
+  }
+
+  .registration-card {
+    padding: 16px;
+  }
+
+  .progress-step {
+    font-size: 11px;
+  }
+
+  .primary-button,
+  .verify-button {
+    min-height: 46px;
+  }
+}
+
+
+/* =========================================================
+   MAXIGO RIDER REGISTRATION - LANGUAGE SELECTOR
+   ========================================================= */
+
+.registration-header-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.registration-language-button {
+  border: 1px solid #ddd2f8;
+  background: #f7f3ff;
+  color: #6738ee;
+  padding: 9px 13px;
+  border-radius: 11px;
+  font-size: 12px;
+  font-weight: 800;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.registration-language-button:hover {
+  background: #eee9ff;
+  border-color: #6738ee;
+  transform: translateY(-1px);
+}
+
+@media (max-width: 600px) {
+  .registration-header-actions {
+    gap: 7px;
+  }
+
+  .registration-language-button {
+    padding: 8px 10px;
+    font-size: 11px;
+  }
+}
